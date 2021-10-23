@@ -40,10 +40,10 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #endif
 #include <media/msm_media_info.h>
 #include <cutils/properties.h>
-#include <media/hardware/HardwareAPI.h>
+#include "HardwareAPI.h"
 
 #ifdef _ANDROID_
-#include <media/hardware/HardwareAPI.h>
+#include "HardwareAPI.h"
 #include <gralloc_priv.h>
 #endif
 

@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-#include "QComOMXPlugin.h"
+#include <QComOMXPlugin.h>
 
 #include <dlfcn.h>
 
-#include <media/hardware/HardwareAPI.h>
+#include <HardwareAPI.h>
 
 namespace android {
 

@@ -28,7 +28,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "omx_swvenc_hevc.h"
 #include <string.h>
 #include <stdio.h>
-#include <media/hardware/HardwareAPI.h>
+#include "HardwareAPI.h"
 #include <gralloc_priv.h>
 #include <media/msm_media_info.h>
 

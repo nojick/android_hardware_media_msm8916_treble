@@ -42,7 +42,7 @@
 #include <queue>
 #include <pthread.h>
 
-#include <log/log.h>
+#include <cutils/log.h>
 
 extern unsigned int g_omx_swvdec_logmask;
                       ///< global OMX SwVdec logmask variable extern declaration

@@ -91,7 +91,6 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE                    := libOmxVenc
 LOCAL_MODULE_TAGS               := optional
-LOCAL_HEADER_LIBRARIES	        := media_plugin_headers
 LOCAL_VENDOR_MODULE             := true
 LOCAL_CFLAGS                    := $(libmm-venc-def)
 LOCAL_C_INCLUDES                := $(libmm-venc-inc)
@@ -99,7 +98,8 @@ LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-venc-add-dep)
 
 LOCAL_PRELINK_MODULE      := false
 LOCAL_SHARED_LIBRARIES    := liblog libutils libcutils \
-                             libc2dcolorconvert libdl libgui
+                             libc2dcolorconvert libdl libhardware
+#libgui
 LOCAL_SHARED_LIBRARIES += libqdMetaData
 LOCAL_STATIC_LIBRARIES    := libOmxVidcCommon
 
@@ -129,7 +129,8 @@ LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-venc-add-dep)
 
 LOCAL_PRELINK_MODULE      := false
 LOCAL_SHARED_LIBRARIES    := liblog libutils libcutils \
-                             libc2dcolorconvert libdl libgui
+                             libc2dcolorconvert libdl 
+#libgui
 LOCAL_SHARED_LIBRARIES    += libMpeg4SwEncoder
 LOCAL_STATIC_LIBRARIES    := libOmxVidcCommon
 
@@ -157,7 +158,8 @@ LOCAL_ADDITIONAL_DEPENDENCIES   := $(libmm-venc-add-dep)
 
 LOCAL_PRELINK_MODULE      := false
 LOCAL_SHARED_LIBRARIES    := liblog libutils libbinder libcutils \
-                             libc2dcolorconvert libdl libgui
+                             libc2dcolorconvert libdl 
+#libgui
 LOCAL_SHARED_LIBRARIES    += libHevcSwEncoder
 LOCAL_STATIC_LIBRARIES    := libOmxVidcCommon
 

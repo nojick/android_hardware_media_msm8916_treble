@@ -68,7 +68,7 @@ static ptrdiff_t x;
 #endif
 #include <ui/ANativeObjectBase.h>
 extern "C" {
-#include <utils/Log.h>
+#include <log/log.h>
 }
 #include <linux/videodev2.h>
 #include <poll.h>
@@ -77,7 +77,7 @@ extern "C" {
 #endif // _ANDROID_
 
 #if defined (_ANDROID_HONEYCOMB_) || defined (_ANDROID_ICS_)
-#include <media/hardware/HardwareAPI.h>
+#include "HardwareAPI.h"
 #endif
 
 #include <sys/mman.h>

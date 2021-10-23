@@ -54,7 +54,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <pthread.h>
 #include <semaphore.h>
 #include <linux/msm_vidc_enc.h>
-#include <media/hardware/HardwareAPI.h>
+#include "HardwareAPI.h"
 #include "OMX_Core.h"
 #include "OMX_QCOMExtns.h"
 #include "OMX_VideoExt.h"

@@ -30,7 +30,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "video_encoder_device.h"
 #include <stdio.h>
 #ifdef _ANDROID_ICS_
-#include <media/hardware/HardwareAPI.h>
+#include "HardwareAPI.h"
 #endif
 #ifdef _ANDROID_
 #include <cutils/properties.h>

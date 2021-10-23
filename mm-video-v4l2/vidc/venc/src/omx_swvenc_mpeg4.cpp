@@ -28,7 +28,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "omx_swvenc_mpeg4.h"
 
 /* def: StoreMetaDataInBuffersParams */
-#include <media/hardware/HardwareAPI.h>
+#include "HardwareAPI.h"
 
 /* def: VENUS_BUFFER_SIZE, VENUS_Y_STRIDE etc */
 #include <media/msm_media_info.h>
