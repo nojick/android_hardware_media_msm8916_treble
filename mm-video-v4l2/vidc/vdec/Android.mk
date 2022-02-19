@@ -137,9 +137,9 @@ include $(CLEAR_VARS)
 
 # libOmxVdecHevc library is not built for OSS builds as QCPATH is null in OSS builds.
 
-ifneq "$(wildcard $(QCPATH) )" ""
 ifeq ($(call is-board-platform-in-list, $(TARGETS_THAT_NEED_HEVC_LIB)),true)
 
+LOCAL_HEADER_LIBRARIES	      := libui_v_headers media_plugin_headers libhardware_headers display_headers
 LOCAL_MODULE                    := libOmxVdecHevc
 LOCAL_MODULE_TAGS               := optional
 LOCAL_VENDOR_MODULE             := true
@@ -172,7 +172,6 @@ LOCAL_CFLAGS            += -Wno-error
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif
 endif
 
 # ---------------------------------------------------------------------------------
